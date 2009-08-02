@@ -13,9 +13,7 @@ namespace :doc do
     rdoc.options << '--charset' << 'utf-8'
     rdoc.options << '--format'  << ENV['format']
     rdoc.rdoc_files.include('doc/README_FOR_APP')
-    rdoc.rdoc_files.include('app/models/profile.rb')
-    rdoc.rdoc_files.include('app/models/company.rb')
-    #rdoc.rdoc_files.include('app/**/*.rb')
-#    rdoc.rdoc_files.include('lib/**/*.rb')
+    rdoc.rdoc_files.include('app/**/*.rb')
+    rdoc.rdoc_files.include('lib/**/*.rb')
   }
 end
