@@ -41,4 +41,4 @@ Rdoc::Rails is released under a Creative Commons Attribution 3.0 United
 States License. Please credit me somewhere in your project's documentation if
 you are using this.
 
-{http://i.creativecommons.org/l/by/3.0/us/80x15.png}[http://creativecommons.org/licenses/by/3.0/us/]
+http://i.creativecommons.org/l/by/3.0/us/80x15.png[http://creativecommons.org/licenses/by/3.0/us/]
