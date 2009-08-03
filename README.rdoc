@@ -20,8 +20,11 @@ To install as a Rails plugin, try some variation on one of the following:
 You may then need/want to rename the directory
 <tt>vendor/plugins/rdoc_rails.git/</tt> to just +rdoc_rails+
 
-After that, you should be good to go.  The standard <tt>rake doc:app</tt> or
-<tt>rake doc:reapp</tt> should now run the Rails customized version of RDoc.
+After that, you should be good to go.  The standard
+ > rake doc:app
+or
+ > rake doc:reapp
+should now run the Rails customized version of RDoc.
 
 == Features
 Right now there are just two basic features above and beyond the standard Ruby
