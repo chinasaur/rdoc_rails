@@ -1,10 +1,42 @@
+= RDoc::Rails =
+This package adds Rails-specific information to RDoc generated docs on Rails
+projects. It is envisioned particularly for people wanting to document Rails
+applications for internal use within a team of developers. It includes
++RDoc::Parser::Rails+, based on +RDoc::Parser::Ruby+, as well as
++RDoc::Generator::Railsfish+, based on +RDoc::Generator::Darkfish+.
+
+== Installation ==
+Currently, this is written as a Rails plugin, although I will look into
+packaging it as a gem as well. It works with RDoc version 2.4.3, the most
+current version as of August, 2009. I have tested it only with Rails 2.0, but I
+would expect it to work for projects written in earlier and later versions of
+Rails as well.
+
 To install as a Rails plugin, try some variation on one of the following:
   ruby script/plugin install git://github.com/chinasaur/rdoc_rails.git
   ruby script/plugin install http://github.com/chinasaur/rdoc_rails.git
   ruby script/plugin install http://github.com/chinasaur/rdoc_rails.git/
 
-You may then want to rename the directory <tt>vendor/plugins/rdoc_rails.git/</tt> to
-just +rdoc_rails+.
+You may then need/want to rename the directory
+<tt>vendor/plugins/rdoc_rails.git/</tt> to just +rdoc_rails+.
 
 After that, you should be good to go.  The standard <tt>rake doc:app</tt> or
-<tt>rake doc:reapp</tt> should now run the Rails customized RDoc commands.
+<tt>rake doc:reapp</tt> should now run the Rails customized version of RDoc.
+
+== Features ==
+Right now there are just two basic features above and beyond the standard Ruby
+RDoc: documentation for ActiveRecord associations on Models, and documentation
+for methods delegated to other models through the +delegate+ method.
+But the infrastructure is all there to make it straightforward to parse
+additional features in Rails code and generate documentation based on those
+parsings.
+
+== Contributing ==
+I will try to document things better to make it easy for others to contribute
+additional documentation features.  For now, get in touch if you have any questions and fork away.
+
+== License ==
+Rdoc::Rails is released under a Creative Commons Attribution 3.0 United States
+License. Please credit me somewhere in your project's documentation if you are
+using this.
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/us/80x15.png" /></a>
