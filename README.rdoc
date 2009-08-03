@@ -25,8 +25,12 @@ After that, you should be good to go.  The standard <tt>rake doc:app</tt> or
 
 == Features
 Right now there are just two basic features above and beyond the standard Ruby
-RDoc: documentation for ActiveRecord associations on Models, and documentation
-for methods delegated to other models through the +delegate+ method.
+RDoc:
+
+1. Documentation for ActiveRecord associations on Models
+2. Documentation for methods delegated to other models through the +delegate+
+method.
+
 But the infrastructure is all there to make it straightforward to parse
 additional features in Rails code and generate documentation based on those
 parsings.
