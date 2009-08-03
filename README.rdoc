@@ -28,8 +28,7 @@ Right now there are just two basic features above and beyond the standard Ruby
 RDoc:
 
 1. Documentation for ActiveRecord associations on Models
-2. Documentation for methods delegated to other models through the +delegate+
-method.
+2. Documentation for methods delegated to other models through the +delegate+ method.
 
 But the infrastructure is all there to make it straightforward to parse
 additional features in Rails code and generate documentation based on those
